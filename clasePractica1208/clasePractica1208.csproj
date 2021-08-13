@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{117A54AD-887B-4D88-B4B1-AD3E5734DD3C}</ProjectGuid>
+    <ProjectGuid>{30391F1E-BF64-426B-B24E-722398C8AE72}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>claseTeorica1208</RootNamespace>
-    <AssemblyName>claseTeorica1208</AssemblyName>
+    <RootNamespace>clasePractica1208</RootNamespace>
+    <AssemblyName>clasePractica1208</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>claseTeorica1208.Ejercicio1</StartupObject>
+    <StartupObject>clasePractica1208.Colecciones</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,7 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ejercicio1.cs" />
+    <Compile Include="Colecciones.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

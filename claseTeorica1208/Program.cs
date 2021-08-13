@@ -15,14 +15,21 @@ namespace claseTeorica1208
 
             Console.ReadLine();
         }
-
         ///bucles
         public static void loops()
         {
-            int[] numbers = new int[3];
-            numbers[0] = 5;
-            numbers[1] = 10;
-            numbers[2] = 15;
+            //escribir un ciclo que permita capturar los valores
+            //a almacenar en el arreglo de numbers con un tamaño de 10
+
+            int[] numbers = new int[10];
+            /* numbers[0] = 5;
+             numbers[1] = 10;
+             numbers[2] = 15;*/
+            for (int x= 0; x < numbers.Length; x++)
+            {
+              Console.Write("Escriba el valor para el elemento {0}: ", x);
+              numbers[x] = Convert.ToInt32(Console.ReadLine());
+            } 
 
             //ciclo while
             int i = 0;
@@ -42,19 +49,22 @@ namespace claseTeorica1208
             } while (inc < numbers.Length);
 
 
-            Console.WriteLine("IMPRIME ELEMENTOS CON FOR");
+            Console.WriteLine("IMPRIME ELEMENTOS CON FOR - ARRAY ORDENADO");
+            Array.Sort(numbers); //el metodo Sort de la clase Array permite ordenar un arreglo de una dimension
             for (int j = 0; j < numbers.Length; j++)
             {
                 Console.WriteLine("Posicion {0} : {1}", j, numbers[j]);
             }
 
-            Console.WriteLine("IMPRIME ELEMENTOS CON FOREACH");
+            Console.WriteLine("IMPRIME ELEMENTOS CON FOREACH -  ARRAY INVERTIDO");
+            Array.Reverse(numbers); //el metodo Reverse de la clase Array permite invertir los valores
+            //dentro de un array
             foreach (int item in numbers)
             {
                 Console.WriteLine(item);
             }
-
+           
         }
-        
+
     }
 }
